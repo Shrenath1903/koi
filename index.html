@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#4A8B7F" />
+  <title>the KŌI — Asian Café & Hotpot | Digital Menu</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@500;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Organic Topography Background -->
+  <div class="ambient-art-layer" aria-hidden="true">
+    <div class="organic-wall-blob blob-primary"></div>
+    <div class="organic-wall-blob blob-accent"></div>
+    <div class="topography-grid"></div>
+  </div>
+
+  <!-- App Header -->
+  <header class="app-header" id="app-header">
+    <div class="header-content">
+      <a href="#hero" class="brand-badge">
+        <div class="brand-topo-icon">
+          <svg viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="26" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M30 14 C20 14 14 21 14 30 C14 39 20 46 30 46 C40 46 46 39 46 30 C46 22 41 17 33 17 C25 17 20 23 20 30 C20 36 24 39 30 39 C34 39 37 36 37 31 C37 28 34 25 30 25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-prefix">the</span>
+          <h1 class="brand-title">KŌI</h1>
+          <span class="brand-sub">Asian Café & Hotpot</span>
+        </div>
+      </a>
+
+      <div class="header-btns">
+        <button class="icon-circle-btn" id="theme-toggle" aria-label="Toggle Night Mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Sanctuary -->
+  <section class="hero-sanctuary" id="hero">
+    <div class="hero-card">
+      <span class="hero-greeting">Asian Gastronomy & Hotpot Bar</span>
+      <h2 class="hero-headline">Art of Simmer & Roll</h2>
+      <p class="hero-quote">“A journey through Asian flavours.”</p>
+      
+      <!-- In-flow Mobile Search -->
+      <div class="search-input-container">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="mobile-search-input" placeholder="Search ramyeon, bao, uramaki, gimbap..." autocomplete="off" />
+        <button class="clear-search-btn" id="clear-search-btn" aria-label="Clear Search">&times;</button>
+      </div>
+
+      <!-- In-flow Dietary Filter Chips -->
+      <div class="filter-pills-row">
+        <button class="pill-chip active" data-filter="all">All Dishes</button>
+        <button class="pill-chip" data-filter="veg"><span class="dot-indicator veg"></span> Veg</button>
+        <button class="pill-chip" data-filter="non-veg"><span class="dot-indicator nonveg"></span> Non-Veg</button>
+        <!-- <button class="pill-chip" data-filter="favs">🤍 Saved</button> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Flow Category Carousel (Non-Sticky) -->
+  <section class="category-carousel-section">
+    <div class="section-label-row">
+      <span class="sub-label">Categories</span>
+      <span class="count-tag" id="active-category-name">All Items</span>
+    </div>
+    <div class="inflow-category-scroll" id="category-chips-wrapper">
+      <!-- Injected by JavaScript -->
+    </div>
+  </section>
+
+  <!-- Main Menu Grid (2-Column Architecture) -->
+  <main class="food-feed-wrapper" id="menu-feed">
+    <div class="feed-header">
+      <h3 class="feed-title" id="feed-heading-text">Curated Kitchen Menu</h3>
+      <span class="feed-counter" id="feed-count-badge">Loading...</span>
+    </div>
+
+    <!-- 2-Column Grid -->
+    <div class="two-col-food-grid" id="food-cards-list">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Empty Search State -->
+    <div class="empty-state hidden" id="empty-state-view">
+      <div class="zen-empty-ring"></div>
+      <h4>No Harmonious Match</h4>
+      <p>We could not find dishes matching your criteria.</p>
+      <button class="btn-reset" id="btn-reset-filters">Reset All Filters</button>
+    </div>
+  </main>
+
+  <!-- Thank You & Contact Section -->
+  <section class="minimal-story-strip">
+
+    <h3>Thank You Very Much</h3>
+    <p>We appreciate your visit and hope you enjoyed your dining experience.</p>
+    <div style="margin-top: 16px; font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.6;">
+      <p style="font-weight: 600; color: var(--color-text-dark); margin-bottom: 4px;">CONTACT — A.R.SHRENATH</p>
+      <p>Modern digital menus • Restaurant websites • Branding</p>
+      <p style="margin-top: 6px;"><a href="tel:+918072779321" style="color: var(--color-primary-dark); text-decoration: none; font-weight: 600;">Tel: +91 8072779321</a></p>
+      <!-- <p style="margin-top: 10px; font-size: 0.78rem; color: var(--color-text-light);">© 2026 Café des Arts. All rights reserved.</p> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- <footer class="mobile-footer" id="footer-section">
+        <div class="story-zen-symbol">
+          <svg viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="26" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M30 14 C20 14 14 21 14 30 C14 39 20 46 30 46 C40 46 46 39 46 30 C46 22 41 17 33 17 C25 17 20 23 20 30 C20 36 24 39 30 39 C34 39 37 36 37 31 C37 28 34 25 30 25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+    </div>
+    <div class="footer-brand-title">the KŌI</div>
+    <span class="footer-tagline">Asian Café & Hotpot</span>
+    
+    <div class="footer-info-blocks">
+      <div>
+        <strong>Service Hours</strong>
+        <p>11:30 AM – 11:00 PM Daily</p>
+      </div>
+      <div>
+        <strong>Location</strong>
+        <p>Heritage French Quarter, Puducherry</p>
+      </div>
+    </div>
+    <p class="footer-credits">© 2026 the KŌI. Designed with Japanese Minimalist Grace.</p>
+  </footer> -->
+
+  <!-- Floating Mobile Order Pill -->
+  <div class="floating-order-pill" id="floating-cart-pill" onclick="openCartDrawer()">
+    <div class="cart-pill-left">
+      <div class="pill-badge-circle" id="pill-cart-count">0</div>
+      <span class="pill-label">View Order Tray</span>
+    </div>
+    <div class="cart-pill-right">
+      <span class="pill-total-amount" id="pill-cart-total">₹0</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+  </div>
+
+  <!-- Bottom Sheet: Product Detail with Variant Selector -->
+  <div class="bottom-sheet-backdrop" id="dish-detail-sheet">
+    <div class="bottom-sheet-container">
+      <div class="sheet-drag-handle"></div>
+      <button class="sheet-close-btn" onclick="closeDishDetail()">&times;</button>
+      
+      <div class="sheet-scroll-body" id="detail-sheet-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-Up Drawer: Shopping Cart -->
+  <div class="bottom-sheet-backdrop" id="cart-drawer-sheet">
+    <div class="bottom-sheet-container cart-sheet-style">
+      <div class="sheet-drag-handle"></div>
+      <div class="sheet-header-line">
+        <h3>Your Table Order</h3>
+        <button class="sheet-close-btn" onclick="closeCartDrawer()">&times;</button>
+      </div>
+
+      <div class="cart-scroll-items" id="cart-items-feed">
+        <!-- Dynamic cart rows -->
+      </div>
+
+      <!-- <div class="cart-kitchen-note-box">
+        <label for="order-kitchen-note">Allergies & Kitchen Instructions</label>
+        <input type="text" id="order-kitchen-note" placeholder="Please alert us if you have any allergies..." maxlength="120" />
+      </div> -->
+
+      <div class="cart-pricing-summary">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-val">₹0</span>
+        </div>
+        <div class="summary-line grand-total-line">
+          <span>Grand Total</span>
+          <span class="total-big" id="cart-grand-val">₹0</span>
+        </div>
+      </div>
+
+        <div class="cart-kitchen-note-box">
+        <label for="order-kitchen-note">Please Show this to the Table Service Staff</label>
+      </div>
+
+      <!-- <button class="btn-primary-action" id="btn-proceed-checkout" onclick="openCheckoutModal()">
+        <span>Proceed to Table Confirmation</span>
+      </button> -->
+    </div>
+  </div>
+
+  <!-- Slide-Up Drawer: Table Checkout -->
+  <div class="bottom-sheet-backdrop" id="checkout-sheet">
+    <div class="bottom-sheet-container">
+      <div class="sheet-drag-handle"></div>
+      <div class="sheet-header-line">
+        <h3>Confirm Your Order</h3>
+        <button class="sheet-close-btn" onclick="closeCheckoutModal()">&times;</button>
+      </div>
+
+      <form id="mobile-checkout-form" class="checkout-fields-form" onsubmit="return false;">
+        <div class="input-block">
+          <label>Your Name *</label>
+          <input type="text" id="guest-name" required placeholder="e.g. Maya Chen" />
+        </div>
+
+        <div class="input-row">
+          <div class="input-block half">
+            <label>Mobile Number *</label>
+            <input type="tel" id="guest-phone" required placeholder="e.g. 98400..." />
+          </div>
+          <div class="input-block half">
+            <label>Table Number *</label>
+            <select id="guest-table" required>
+              <option value="">Choose Table</option>
+              <option value="Table 01 - Tatami Corner">Table 01 (Tatami)</option>
+              <option value="Table 02 - Garden View">Table 02 (Garden)</option>
+              <option value="Table 03 - Hotpot Station A">Table 03 (Hotpot Station)</option>
+              <option value="Table 04 - Hotpot Station B">Table 04 (Hotpot Station)</option>
+              <option value="Table 05 - French Window">Table 05 (Window)</option>
+              <option value="Table 06 - Botanical Lounge">Table 06 (Lounge)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-block">
+          <label>Special Requests</label>
+          <input type="text" id="guest-notes" placeholder="Extra ginger, wasabi, warm water, etc." />
+        </div>
+
+        <div class="order-final-preview">
+          <span>Amount to Pay at Table:</span>
+          <strong id="checkout-final-amt">₹0</strong>
+        </div>
+
+        <button type="submit" class="btn-primary-action" onclick="submitFinalOrder()">
+          <span>Confirm & Send to Kitchen</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Sheet -->
+  <div class="bottom-sheet-backdrop" id="order-success-sheet">
+    <div class="bottom-sheet-container success-sheet-style">
+      <div class="success-zen-check">
+        <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="var(--color-primary-soft)" stroke="var(--color-primary)" stroke-width="2"/><path d="M18 31 L26 39 L42 22" fill="none" stroke="var(--color-primary-dark)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2>Order Dispatched with Grace</h2>
+      <p class="success-sub">The kitchen is preparing your selection.</p>
+      <div class="order-receipt-box" id="success-receipt-data"></div>
+      <button class="btn-primary-action" onclick="closeSuccessSheet()">Return to Menu</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="app-toast" id="app-toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

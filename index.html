@@ -178,6 +178,7 @@
         <!-- Dynamic cart rows -->
       </div>
 
+<<<<<<< HEAD
       <!-- <div class="cart-kitchen-note-box">
         <label for="order-kitchen-note">Allergies & Kitchen Instructions</label>
         <input type="text" id="order-kitchen-note" placeholder="Please alert us if you have any allergies..." maxlength="120" />
@@ -201,6 +202,133 @@
       <!-- <button class="btn-primary-action" id="btn-proceed-checkout" onclick="openCheckoutModal()">
         <span>Proceed to Table Confirmation</span>
       </button> -->
+=======
+      <div class="cart-pricing-summary">
+        <div class="summary-line grand-total-line" style="border-top:none; margin-top:0; padding-top:0;">
+          <span>Total (without GST)</span>
+          <span class="total-big" id="cart-subtotal-val">₹0</span>
+        </div>
+      </div>
+
+      <!-- Action: View Final Bill with 5% GST -->
+      <div class="cart-actions-stack">
+        <button class="btn-primary-action btn-view-bill-action" onclick="openBillModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-inline-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>View Final Bill (with 5% GST)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-Up Sheet / Modal: Final Bill with 5% GST -->
+  <div class="bottom-sheet-backdrop" id="bill-sheet-modal">
+    <div class="bottom-sheet-container bill-sheet-style">
+      <div class="sheet-drag-handle"></div>
+      
+      <div class="sheet-header-line">
+        <h3>Final Bill</h3>
+        <button class="sheet-close-btn" onclick="closeBillModal()" aria-label="Close Bill">&times;</button>
+      </div>
+
+      <div class="bill-scroll-content" id="printable-receipt-card">
+        
+        <!-- Bill Header -->
+        <div class="bill-header-zone">
+          <div class="bill-logo-mark">
+            <svg viewBox="0 0 60 60" fill="none">
+              <circle cx="30" cy="30" r="26" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 3"/>
+              <path d="M30 14 C20 14 14 21 14 30 C14 39 20 46 30 46 C40 46 46 39 46 30 C46 22 41 17 33 17 C25 17 20 23 20 30 C20 36 24 39 30 39 C34 39 37 36 37 31 C37 28 34 25 30 25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h2 class="bill-cafe-title">the KŌI</h2>
+          <p class="bill-cafe-sub">Asian Café & Hotpot</p>
+          <p class="bill-address">Heritage French Quarter, Puducherry - 605001</p>
+          <p class="bill-contact">Tel: +91 8072779321 • contact@thekoi.in</p>
+          <div class="bill-tax-ids">
+            <span><strong>GSTIN:</strong> 33AAACK4821M1Z4</span>
+            <span><strong>FSSAI:</strong> 12423001000456</span>
+          </div>
+        </div>
+
+        <div class="bill-divider dashed-line"></div>
+        <div class="bill-title-banner">TAX INVOICE / FINAL BILL</div>
+        <div class="bill-divider dashed-line"></div>
+
+        <!-- Metadata Section -->
+        <div class="bill-meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Bill No:</span>
+            <span class="meta-val bold-text" id="receipt-bill-no">KOI-2026-8492</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Date & Time:</span>
+            <span class="meta-val"><span id="receipt-bill-date">24-Aug-2026</span> <span id="receipt-bill-time">08:00 PM</span></span>
+          </div>
+        </div>
+
+        <div class="bill-divider double-line"></div>
+
+        <!-- Itemized Table -->
+        <div class="bill-table-wrapper">
+          <table class="bill-items-table">
+            <thead>
+              <tr>
+                <th class="col-sn">#</th>
+                <th class="col-desc">Item Description</th>
+                <th class="col-qty">Qty</th>
+                <th class="col-rate">Rate</th>
+                <th class="col-amt">Amount</th>
+              </tr>
+            </thead>
+            <tbody id="receipt-table-body">
+              <!-- Injected by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bill-divider double-line"></div>
+
+        <!-- Pricing & 5% GST Calculation Breakdown -->
+        <div class="bill-pricing-summary">
+          <div class="summary-line">
+            <span>Total Items / Qty</span>
+            <span id="receipt-items-qty-count">0 items / 0 pcs</span>
+          </div>
+          <div class="summary-line">
+            <span>Items Subtotal</span>
+            <span id="receipt-subtotal-val">₹0.00</span>
+          </div>
+          <div class="summary-line tax-summary-line">
+            <span>CGST (2.50%)</span>
+            <span id="receipt-cgst-val">₹0.00</span>
+          </div>
+          <div class="summary-line tax-summary-line">
+            <span>SGST (2.50%)</span>
+            <span id="receipt-sgst-val">₹0.00</span>
+          </div>
+          <div class="summary-line tax-summary-line" style="font-weight:600;">
+            <span>Total GST (5.00%)</span>
+            <span id="receipt-total-gst-val">₹0.00</span>
+          </div>
+          <div class="summary-line" id="receipt-roundoff-row">
+            <span>Round Off</span>
+            <span id="receipt-roundoff-val">₹0.00</span>
+          </div>
+          
+          <div class="summary-line grand-total-line">
+            <span>Grand Total / Net Payable</span>
+            <span class="total-big" id="receipt-grand-val">₹0.00</span>
+          </div>
+        </div>
+
+        <!-- Amount in Words -->
+        <div class="bill-amount-words">
+          <span class="words-label">Amount in words:</span>
+          <p id="receipt-words-text">Rupees Zero Only</p>
+        </div>
+
+      </div>
+>>>>>>> 4bd8815 (message)
     </div>
   </div>
 

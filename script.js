@@ -18,11 +18,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 460,
-<<<<<<< HEAD
-    image: 'https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80',
-=======
     image: './img/Korean Fried Chicken.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Deep-fried crispy chicken glazed in authentic Korean sauce, topped with spring onions and toasted sesame.',
     tasteProfile: ['Crispy', 'Glazed Sweet-Spicy', 'Savory'],
     healthBenefits: ['High Protein'],
@@ -101,11 +97,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 280,
-<<<<<<< HEAD
-    image: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80',
-=======
     image: './img/Steamed Bao Bun.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Fluffy steamed lotus bao with protein, Korean spicy sauce, crisp cucumber, onion, tomato, and bell pepper.',
     tasteProfile: ['Pillow Soft', 'Zesty', 'Fresh Crunch'],
     healthBenefits: ['Steamed Low Oil'],
@@ -156,11 +148,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 480,
-<<<<<<< HEAD
-    image: './img/night_market_fried_rice.jpg',
-=======
     image: './img/Night Market Fried Rice.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Wok-tossed fragrant jasmine rice with choice of protein, fresh basil leaves, onion, garlic, chili, soy & oyster sauce.',
     tasteProfile: ['Wok Hei', 'Herbaceous Basil', 'Savory'],
     healthBenefits: ['Fresh Aromatics'],
@@ -187,11 +175,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 450,
-<<<<<<< HEAD
-    image: './img/kimchi_fried_rice.jpg',
-=======
     image: './img/Kimchi Fried Rice.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Aged kimchi fried rice with choice of protein, spring onion, garlic, nori sheets, and toasted sesame. Recommended: Fried Egg (+₹30).',
     tasteProfile: ['Tangy', 'Fiery', 'Deep Umami'],
     healthBenefits: ['Probiotic Kimchi', 'Gut Healthy'],
@@ -344,11 +328,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: false,
     calories: 460,
-<<<<<<< HEAD
-    image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80',
-=======
     image: './img/Chowmein Noodles.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Stir-fried springy noodles tossed in light soy reduction, crunchy cabbage, bell peppers, and scallions.',
     tasteProfile: ['Springy', 'Light Soy Umami', 'Crisp Veggies'],
     healthBenefits: ['Energizing Carbohydrates'],
@@ -376,11 +356,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 480,
-<<<<<<< HEAD
-    image: './img/traditional_bibimbap.jpg',
-=======
     image: './img/Traditional Bibimbap.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Warm rice topped with sautéed seasoned mushrooms, zucchini ribbons, cucumber, crisp iceberg, scallions, and house gochujang bibimbap sauce.',
     tasteProfile: ['Balanced Sweet-Spicy', 'Nutty Sesame', 'Fresh Rainbow Veg'],
     healthBenefits: ['Nutrient Rich', 'High Fiber'],
@@ -404,11 +380,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 420,
-<<<<<<< HEAD
-    image: './img/veg_ramyeon.jpg',
-=======
     image: './img/Veg Ramyeon.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Springy ramyeon noodles in rich vegetable broth with bok choy, mushrooms, sweet corn, scallions, and peanut sesame sauce.',
     tasteProfile: ['Spicy Broth', 'Nutty Peanut', 'Comforting'],
     healthBenefits: ['Mineral Rich Broth'],
@@ -430,11 +402,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 460,
-<<<<<<< HEAD
-    image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=600&q=80',
-=======
     image: './img/Egg Ramyeon.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Classic ramyeon in aromatic broth with soft-cooked egg ribbons, bok choy, sweet corn, mushrooms, and sesame tare.',
     tasteProfile: ['Silky Egg', 'Spicy', 'Nutty'],
     healthBenefits: ['Protein Enriched'],
@@ -456,11 +424,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 520,
-<<<<<<< HEAD
-    image: 'https://images.unsplash.com/photo-1614563637806-1d0e645e0940?auto=format&fit=crop&w=600&q=80',
-=======
     image: './img/Spicy Chicken Ramyeon.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Fiery broth with tender spiced chicken, crisp bok choy, shiitake mushrooms, sweet corn, and toasted sesame.',
     tasteProfile: ['Fiery', 'Savory Chicken Umami', 'Deep Broth'],
     healthBenefits: ['High Protein', 'Immunity Boost'],
@@ -486,11 +450,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 540,
-<<<<<<< HEAD
-    image: './img/katsu_ramyeon.jpg',
-=======
     image: './img/Katsu Ramyeon.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Crispy fried panko cutlet served on top of spicy noodle broth with sweet corn, bok choy, and mushrooms.',
     tasteProfile: ['Crunchy Cutlet', 'Rich Broth', 'Peanut Sesame'],
     healthBenefits: ['Hearty Meal'],
@@ -512,11 +472,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 580,
-<<<<<<< HEAD
-    image: './img/pork_ramyeon.jpg',
-=======
     image: './img/Pork Ramyeon.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Slow-braised tender pork chashu slices in rich aromatic broth with noodles, bok choy, mushrooms, and sweet corn.',
     tasteProfile: ['Rich Gelatinous Pork', 'Savory', 'Spicy'],
     healthBenefits: ['Rich Collagen Stock'],
@@ -570,11 +526,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 290,
-<<<<<<< HEAD
-    image: './img/wasabi_roll.jpg',
-=======
     image: './img/Wasabi Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Smooth cream cheese, julienne carrots, crisp cucumber, and refreshing wasabi mayo glaze.',
     tasteProfile: ['Creamy', 'Pungent Wasabi Zing', 'Fresh Crunch'],
     healthBenefits: ['Digestive Wasabi'],
@@ -626,11 +578,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 295,
-<<<<<<< HEAD
-    image: './img/spicy_tofu_roll.jpg',
-=======
     image: './img/Spicy Tofu Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Marinated spicy tofu cubes, cool cucumber batons, and spicy Japanese tare drizzle.',
     tasteProfile: ['Silky Tofu', 'Cool Cucumber', 'Spicy'],
     healthBenefits: ['Plant Protein'],
@@ -656,11 +604,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 300,
-<<<<<<< HEAD
-    image: './img/shiitake_mushroom_roll.jpg',
-=======
     image: './img/Shiitake Mushroom Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Slow-braised shiitake mushrooms, spicy chili mayo, sweet chili drizzle, and fresh cucumber.',
     tasteProfile: ['Deep Woodsy Umami', 'Spicy Sweet', 'Juicy'],
     healthBenefits: ['Shiitake Immunity Beta-Glucans'],
@@ -686,11 +630,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 340,
-<<<<<<< HEAD
-    image: './img/spicy_chicken_roll.jpg',
-=======
     image: './img/Spicy Chicken Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Tender chicken shreds tossed in house spicy tare with crisp cucumber and toasted sesame.',
     tasteProfile: ['Savory Chicken', 'Fiery Mayo', 'Crunchy'],
     healthBenefits: ['Lean Protein'],
@@ -716,11 +656,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: false,
     calories: 310,
-<<<<<<< HEAD
-    image: './img/california_roll.jpg',
-=======
     image: './img/California Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Sweet crab surimi, fresh cucumber ribbons, toasted white sesame, and Japanese kewpie mayo.',
     tasteProfile: ['Delicate Sweet', 'Cool', 'Classic'],
     healthBenefits: ['Light Clean Protein'],
@@ -746,11 +682,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 360,
-<<<<<<< HEAD
-    image: './img/dynamite_roll.jpg',
-=======
     image: './img/dynamite roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Succulent prawn tempura and Atlantic salmon roll glazed with spicy sauce and eel glaze.',
     tasteProfile: ['Explosive Umami', 'Crisp Prawn', 'Sweet Eel Tare'],
     healthBenefits: ['Omega-3 Rich'],
@@ -884,11 +816,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: false,
     calories: 320,
-<<<<<<< HEAD
-    image: './img/tempura_roll.jpg',
-=======
     image: './img/Tempura Roll.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Choice of protein tempura, sesame seeds, and sweet eel tare reduction over vinegared sushi rice.',
     tasteProfile: ['Crunchy', 'Light Sweet Soy', 'Savory'],
     healthBenefits: ['Clean Fried Crunch'],
@@ -934,11 +862,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: false,
     calories: 220,
-<<<<<<< HEAD
-    image: './img/tofu_teriyaki_maki.jpg',
-=======
     image: './img/Tofu Teriyaki Maki.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Pan-seared tofu glazed in sweet teriyaki sauce, tightly rolled with nori and sushi rice.',
     tasteProfile: ['Sweet Teriyaki', 'Silky Tofu', 'Umami'],
     healthBenefits: ['Plant Protein'],
@@ -1048,11 +972,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: false,
     calories: 250,
-<<<<<<< HEAD
-    image: './img/salmon_maki.jpg',
-=======
     image: './img/Salmon Maki.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Fresh Atlantic salmon wrapped simply with sushi rice and nori.',
     tasteProfile: ['Buttery Salmon', 'Clean', 'Melting'],
     healthBenefits: ['Omega-3 Rich'],
@@ -1076,11 +996,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: false,
     calories: 270,
-<<<<<<< HEAD
-    image: './img/tofu_gimbap.jpg',
-=======
     image: './img/Tofu Gimbap.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Korean roll filled with seasoned tofu, house pickled vegetables, sesame oil, and toasted sesame.',
     tasteProfile: ['Sesame Aromatic', 'Crunchy Pickles', 'Nutty Tofu'],
     healthBenefits: ['Probiotic Pickles', 'High Fiber'],
@@ -1146,11 +1062,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: false,
     calories: 340,
-<<<<<<< HEAD
-    image: './img/chicken_sausage_gimbap.jpg',
-=======
     image: './img/Chicken Sausage Gimbap.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Juicy chicken sausage, melted cheese slice, pickled vegetables, and sesame oil.',
     tasteProfile: ['Cheesy', 'Savory Sausage', 'Crunchy'],
     healthBenefits: ['High Protein Snack'],
@@ -1176,11 +1088,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: false,
     calories: 360,
-<<<<<<< HEAD
-    image: './img/bulgogi_gimbap.jpg',
-=======
     image: './img/Bulgogi Gimbap.jpg',
->>>>>>> 4bd8815 (message)
     description: 'Sweet soy bulgogi marinated meat, mushrooms, onions, pickled radish, and sesame oil.',
     tasteProfile: ['Caramelized Sweet Bulgogi', 'Savory', 'Nutty'],
     healthBenefits: ['High Iron & Protein'],
@@ -1592,10 +1500,7 @@ const State = {
   currentDish: null,
   selectedVariantIndex: 0,
   sheetQty: 1,
-<<<<<<< HEAD
-=======
   currentInvoiceNo: null,
->>>>>>> 4bd8815 (message)
   theme: localStorage.getItem('koi_m_theme') || 'light'
 };
 
@@ -1622,9 +1527,6 @@ const UI = {
   cartSheet: document.getElementById('cart-drawer-sheet'),
   cartFeed: document.getElementById('cart-items-feed'),
   cartSubtotal: document.getElementById('cart-subtotal-val'),
-<<<<<<< HEAD
-  cartGrand: document.getElementById('cart-grand-val'),
-=======
   cartGst: document.getElementById('cart-gst-val'),
   cartGrand: document.getElementById('cart-grand-val'),
   
@@ -1643,7 +1545,6 @@ const UI = {
   receiptGrandVal: document.getElementById('receipt-grand-val'),
   receiptWordsText: document.getElementById('receipt-words-text'),
 
->>>>>>> 4bd8815 (message)
   checkoutSheet: document.getElementById('checkout-sheet'),
   checkoutFinalAmt: document.getElementById('checkout-final-amt'),
   successSheet: document.getElementById('order-success-sheet'),
@@ -1965,12 +1866,6 @@ function saveCart() {
   localStorage.setItem('koi_m_cart', JSON.stringify(State.cart));
 }
 
-<<<<<<< HEAD
-function updateCartState() {
-  const totalCount = State.cart.reduce((sum, i) => sum + i.quantity, 0);
-  const subtotal = State.cart.reduce((sum, i) => sum + (i.price * i.quantity), 0);
-  const grand = subtotal;
-=======
 // Convert number to Indian currency words
 function numberToWordsINR(amount) {
   const num = Math.round(amount);
@@ -2022,38 +1917,10 @@ function updateCartState() {
   const totalGst = cgst + sgst;
   const exactGrand = subtotal + totalGst;
   const grand = Math.round(exactGrand);
->>>>>>> 4bd8815 (message)
 
   if (totalCount > 0) {
     UI.floatingPill.classList.add('visible');
     UI.pillCount.textContent = totalCount;
-<<<<<<< HEAD
-    UI.pillTotal.textContent = `₹${grand}`;
-  } else {
-    UI.floatingPill.classList.remove('visible');
-    closeCartDrawer();
-  }
-
-  UI.cartSubtotal.textContent = `₹${subtotal}`;
-  UI.cartGrand.textContent = `₹${grand}`;
-  UI.checkoutFinalAmt.textContent = `₹${grand}`;
-
-  if (State.cart.length === 0) {
-    UI.cartFeed.innerHTML = '<p style="text-align:center; padding:20px; font-size:0.85rem; color:var(--color-text-muted);">Your order tray is empty.</p>';
-  } else {
-    UI.cartFeed.innerHTML = State.cart.map(item => `
-      <div class="cart-row">
-        <img src="${item.image}" class="cart-thumb" />
-        <div class="cart-meta">
-          <div class="cart-name">${item.name}</div>
-          ${item.variantName ? `<span class="cart-variant-tag">${item.variantName}</span>` : ''}
-          <div class="cart-cost">₹${item.price * item.quantity}</div>
-        </div>
-        <div class="qty-stepper-ctrl">
-          <button onclick="updateCartQty('${item.cartKey}', -1)">−</button>
-          <span>${item.quantity}</span>
-          <button onclick="updateCartQty('${item.cartKey}', 1)">+</button>
-=======
     UI.pillTotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
   } else {
     UI.floatingPill.classList.remove('visible');
@@ -2081,19 +1948,15 @@ function updateCartState() {
           <button onclick="updateCartQty('${item.cartKey}', -1)" aria-label="Decrease quantity">−</button>
           <span>${item.quantity}</span>
           <button onclick="updateCartQty('${item.cartKey}', 1)" aria-label="Increase quantity">+</button>
->>>>>>> 4bd8815 (message)
         </div>
       </div>
     `).join('');
   }
-<<<<<<< HEAD
-=======
 
   // If bill modal is currently open, refresh its data in real-time
   if (UI.billSheet && UI.billSheet.classList.contains('active')) {
     populateBillModalData();
   }
->>>>>>> 4bd8815 (message)
 }
 
 function openCartDrawer() {
@@ -2104,8 +1967,6 @@ function closeCartDrawer() {
   UI.cartSheet.classList.remove('active');
 }
 
-<<<<<<< HEAD
-=======
 // 8. Authentic Restaurant Final Bill (Tax Invoice with 5% GST)
 function openBillModal() {
   if (State.cart.length === 0) {
@@ -2242,7 +2103,6 @@ NET PAYABLE AMOUNT:    ₹${grandTotal.toFixed(2)}
   }
 }
 
->>>>>>> 4bd8815 (message)
 function openCheckoutModal() {
   closeCartDrawer();
   UI.checkoutSheet.classList.add('active');
@@ -2271,11 +2131,7 @@ function submitFinalOrder() {
     <strong>Guest:</strong> ${name} (${phone})<br/>
     <strong>Table:</strong> ${table}<br/>
     ${kitchenNote ? `<strong>Kitchen Note:</strong> ${kitchenNote}<br/>` : ''}
-<<<<<<< HEAD
-    <strong>Total Payable:</strong> ${total}
-=======
     <strong>Total Payable (incl 5% GST):</strong> ${total}
->>>>>>> 4bd8815 (message)
   `;
 
   State.cart = [];
@@ -2350,18 +2206,11 @@ function bindListeners() {
     renderMenuGrid();
   });
 
-<<<<<<< HEAD
-  [UI.detailSheet, UI.cartSheet, UI.checkoutSheet, UI.successSheet].forEach(sheet => {
-    sheet.addEventListener('click', (e) => {
-      if (e.target === sheet) sheet.classList.remove('active');
-    });
-=======
   [UI.detailSheet, UI.cartSheet, UI.checkoutSheet, UI.successSheet, UI.billSheet].forEach(sheet => {
     if (sheet) {
       sheet.addEventListener('click', (e) => {
         if (e.target === sheet) sheet.classList.remove('active');
       });
     }
->>>>>>> 4bd8815 (message)
   });
 }

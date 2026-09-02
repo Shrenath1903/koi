@@ -249,7 +249,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: false,
     calories: 560,
-    image: './img/pork_chashu_rice.jpeg',
+    image: './img/Pork_chachu_rice.jpeg',
     description: 'Melt-in-mouth braised pork belly chashu slices over rice with raw sweet onion, spring onions, and rich chashu reduction.',
     tasteProfile: ['Melt-in-Mouth', 'Rich Umami', 'Silky'],
     healthBenefits: ['Natural Collagen'],

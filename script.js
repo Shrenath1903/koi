@@ -85,7 +85,7 @@ const MENU_DATA = [
   },
   {
     id: 'app-bao',
-    name: 'Steamed Bao Bun',
+    name: 'Chicken and Tofu bao',
     category: 'Appetizers',
     price: 225,
     variants: [
@@ -97,7 +97,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 280,
-    image: './img/steamed_bao_bun.jpg',
+    image: './img/Korean_chicken_bao.jpeg',
     description: 'Fluffy steamed lotus bao with protein, Korean spicy sauce, crisp cucumber, onion, tomato, and bell pepper.',
     tasteProfile: ['Pillow Soft', 'Zesty', 'Fresh Crunch'],
     healthBenefits: ['Steamed Low Oil'],
@@ -149,7 +149,7 @@ const MENU_DATA = [
     isSpicy: true,
     calories: 480,
     image: './img/night_market_fried_rice.jpg',
-    description: 'Wok-tossed fragrant jasmine rice with choice of protein, fresh basil leaves, onion, garlic, chili, soy & oyster sauce.',
+    description: 'Wok-tossed Sticky rice with choice of protein, fresh basil leaves, onion, garlic, chili, soy & oyster sauce.',
     tasteProfile: ['Wok Hei', 'Herbaceous Basil', 'Savory'],
     healthBenefits: ['Fresh Aromatics'],
     nutrition: { calories: '480 kcal', protein: '18 g', carbs: '64 g', fat: '16 g' },
@@ -271,7 +271,7 @@ const MENU_DATA = [
     isVeg: false,
     isSpicy: true,
     calories: 510,
-    image: './img/mongolian_beef_rice.jpg',
+    image: './img/mongolian_beef_rice.jpeg',
     description: 'Crispy flash-fried beef slices tossed with whole garlic cloves, fresh ginger root, spring onions, and sweet oyster glaze.',
     tasteProfile: ['Crisp Edges', 'Savory-Sweet', 'Ginger Aromatic'],
     healthBenefits: ['High Iron'],
@@ -1738,9 +1738,6 @@ function openDishDetail(dishId) {
       <ul>
         <li>Suitable For: ${dish.suitableFor}</li>
         <li>Spice Level: ${dish.spiceLevel}</li>
-        <li>Recommended Pairing: ${dish.pairing}</li>
-        <li>Preparation Time: ${dish.prepTime}</li>
-        <li>Freshness: ${dish.freshness}</li>
       </ul>
     </div>
 

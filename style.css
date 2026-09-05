@@ -134,14 +134,29 @@ body {
 }
 
 .brand-topo-icon {
-  width: 34px;
-  height: 34px;
-  color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
 }
 
+.brand-badge:hover .brand-topo-icon {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.brand-topo-icon img,
 .brand-topo-icon svg {
   width: 100%;
   height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+[data-theme="dark"] .brand-topo-icon img {
+  filter: brightness(1.25) contrast(1.1) drop-shadow(0 0 6px rgba(0, 180, 170, 0.4));
 }
 
 .brand-prefix {
@@ -1282,14 +1297,29 @@ body {
 }
 
 .bill-logo-mark {
-  width: 42px;
-  height: 42px;
-  margin: 0 auto 6px;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary-dark);
+}
+
+.bill-logo-mark img,
+.bill-logo-mark svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 [data-theme="dark"] .bill-logo-mark {
   color: var(--color-primary-light);
+}
+
+[data-theme="dark"] .bill-logo-mark img {
+  filter: brightness(1.25) contrast(1.1) drop-shadow(0 0 6px rgba(0, 180, 170, 0.4));
 }
 
 .bill-cafe-title {

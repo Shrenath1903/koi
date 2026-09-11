@@ -131,6 +131,58 @@ const MENU_DATA = [
     freshness: 'Slow-simmered beef pulled per order.',
     chefStory: 'Korean bulgogi marinade reduced slowly into sweet caramelized beef shreds.'
   },
+  {
+    id: 'app-momo',
+    name: 'Momo',
+    category: 'Appetizers',
+    price: 250,
+    variants: [
+      { name: 'Veg', price: 250, isVeg: true },
+      { name: 'Chicken', price: 300, isVeg: false }
+    ],
+    rating: 4.8,
+    prepTime: '10 mins',
+    isVeg: true,
+    isSpicy: false,
+    calories: 280,
+    image: './img/momo.jpg',
+    description: 'Delicate steamed Himalayan dumplings stuffed with seasoned vegetables or minced chicken, served with spicy sesame-tomato chutney.',
+    tasteProfile: ['Juicy Filling', 'Savory', 'Aromatic Chutney'],
+    healthBenefits: ['Steamed Low Oil', 'Lean Protein'],
+    nutrition: { calories: '280 kcal', protein: '14 g', carbs: '38 g', fat: '8 g' },
+    ingredients: ['Dumpling wrappers', 'Choice of filling (Veg / Chicken)', 'Onion', 'Garlic', 'Himalayan spices', 'Sesame-tomato chutney'],
+    suitableFor: 'Veg / Non-Veg Options',
+    spiceLevel: 'Mild',
+    pairing: 'Hot Sencha Tea',
+    freshness: 'Hand-folded and steamed fresh in bamboo baskets.',
+    chefStory: 'Authentic Himalayan dumplings hand-pleated and served with our freshly ground roasted sesame and tomato achar.'
+  },
+  {
+    id: 'app-jhol-momo',
+    name: 'Jhol Momo',
+    category: 'Appetizers',
+    price: 300,
+    variants: [
+      { name: 'Veg', price: 300, isVeg: true },
+      { name: 'Chicken', price: 350, isVeg: false }
+    ],
+    rating: 4.9,
+    prepTime: '12 mins',
+    isVeg: true,
+    isSpicy: true,
+    calories: 340,
+    image: './img/jhol_momo.jpg',
+    description: 'Steamed momos served submerged in a bowl of aromatic, tangy, and nutty roasted sesame, soybean, and tomato soup broth (jhol achar).',
+    tasteProfile: ['Tangy Sesame Broth', 'Spicy Timur Zing', 'Juicy Dumpling'],
+    healthBenefits: ['Immunity Spices', 'Nutrient-Dense Broth'],
+    nutrition: { calories: '340 kcal', protein: '16 g', carbs: '42 g', fat: '12 g' },
+    ingredients: ['Choice of Momo (Veg / Chicken)', 'Roasted sesame-tomato broth', 'Timur pepper', 'Coriander', 'Soybean', 'Spices'],
+    suitableFor: 'Veg / Non-Veg Options',
+    spiceLevel: 'Medium',
+    pairing: 'Sparkling Yuzu Blossom',
+    freshness: 'Momos steeped in freshly tempered spiced jhol broth.',
+    chefStory: 'The quintessential Kathmandu street specialty — delicate momos bathed in a rich, nutty roasted sesame and timur pepper broth.'
+  },
 
   // ================= RICE AND NOODLE BOWLS =================
   {
@@ -301,7 +353,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 470,
-    image: './img/thai_curry_with_rice.jpeg',
+    image: './img/thai_curry_with_rice.jpg',
     description: 'Fragrant coconut milk broth infused with kaffir lime, lemongrass, Thai basil, eggplant, mushrooms, bell peppers, baby corn.',
     tasteProfile: ['Creamy Coconut', 'Citrusy Lemongrass', 'Herbaceous'],
     healthBenefits: ['Botanical Antioxidants'],
@@ -367,6 +419,32 @@ const MENU_DATA = [
     pairing: 'Iced Jasmine Tea',
     freshness: 'Vegetables individually seasoned on order.',
     chefStory: 'The quintessential Korean mixed bowl celebrating nutritional harmony.'
+  },
+  {
+    id: 'bowl-nepali-keema-noodles',
+    name: 'Nepali Keema Noodles',
+    category: 'Rice & Noodles',
+    price: 350,
+    variants: [
+      { name: 'Chicken', price: 350, isVeg: false },
+      { name: 'Beef', price: 450, isVeg: false }
+    ],
+    rating: 4.9,
+    prepTime: '12 mins',
+    isVeg: false,
+    isSpicy: true,
+    calories: 520,
+    image: './img/nepali_keema_noodles.jpeg',
+    description: 'Springy wok-tossed noodles topped with deeply spiced minced chicken or beef keema gravy, scallions, and fragrant Himalayan timur chili oil.',
+    tasteProfile: ['Savory Keema Gravy', 'Aromatic Timur Spice', 'Springy Noodles'],
+    healthBenefits: ['High Protein', 'Rich Iron'],
+    nutrition: { calories: '520 kcal', protein: '28 g', carbs: '58 g', fat: '20 g' },
+    ingredients: ['Noodles', 'Choice of Keema (Chicken / Beef)', 'Garlic', 'Ginger', 'Onion', 'Timur pepper', 'Chili oil', 'Spring onion'],
+    suitableFor: 'Non-Vegetarian',
+    spiceLevel: 'Medium',
+    pairing: 'Iced Jasmine Milk Tea',
+    freshness: 'Wok-tossed noodles topped with hot slow-simmered keema.',
+    chefStory: 'A beloved Himalayan noodle delicacy layered with intensely seasoned minced meat gravy and spiced chili oil.'
   },
 
   // ================= KOREAN RAMYEON =================
@@ -1356,28 +1434,6 @@ const MENU_DATA = [
     freshness: 'Handcrafted sequentially for optimal temperature.',
     chefStory: 'Our grand banquet platter designed for communal dining.'
   },
-  {
-    id: 'plat-sashimi',
-    name: 'Sashimi Platter (Regular)',
-    category: 'Platters',
-    price: 1200,
-    rating: 5.0,
-    prepTime: '10 mins',
-    isVeg: false,
-    isSpicy: false,
-    calories: 320,
-    image: './img/sashimi_platter.jpg',
-    description: 'Pristine raw slices of 3 pcs Atlantic Salmon and 3 pcs Yellowfin Tuna served over crushed ice with wasabi and aged soy.',
-    tasteProfile: ['Pure Melting Fish', 'Clean Ocean', 'Wasabi Kick'],
-    healthBenefits: ['Pure Protein', 'High Omega-3 Fatty Acids'],
-    nutrition: { calories: '320 kcal', protein: '38 g', carbs: '2 g', fat: '14 g' },
-    ingredients: ['3 pcs salmon sashimi', '3 pcs tuna sashimi', 'Wasabi', 'Soy sauce', 'Daikon garnish'],
-    suitableFor: 'Non-Vegetarian (Raw Fish)',
-    spiceLevel: 'None',
-    pairing: 'Sencha Green Tea',
-    freshness: 'Sliced from sashimi grade blocks with yanagiba blade.',
-    chefStory: 'The purest demonstration of fresh seafood and precision knife skills.'
-  },
 
   // ================= ADD ONS =================
   {
@@ -1590,8 +1646,12 @@ function getFilteredMenu() {
       dish.ingredients.some(i => i.toLowerCase().includes(q));
 
     let matchesFilter = true;
-    if (State.activeFilter === 'veg') matchesFilter = dish.isVeg;
-    if (State.activeFilter === 'non-veg') matchesFilter = !dish.isVeg;
+    if (State.activeFilter === 'veg') {
+      matchesFilter = dish.isVeg || (dish.variants && dish.variants.some(v => v.isVeg));
+    }
+    if (State.activeFilter === 'non-veg') {
+      matchesFilter = !dish.isVeg || (dish.variants && dish.variants.some(v => !v.isVeg));
+    }
     if (State.activeFilter === 'favs') matchesFilter = State.favs.includes(dish.id);
 
     return matchesCat && matchesSearch && matchesFilter;
@@ -1918,7 +1978,7 @@ function updateCartState() {
   if (totalCount > 0) {
     UI.floatingPill.classList.add('visible');
     UI.pillCount.textContent = totalCount;
-    UI.pillTotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+    // UI.pillTotal.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
   } else {
     UI.floatingPill.classList.remove('visible');
     closeCartDrawer();
@@ -1999,7 +2059,13 @@ function populateBillModalData() {
       totalPcsCount += item.quantity;
 
       const originalDish = MENU_DATA.find(d => d.id === item.id);
-      const isVeg = originalDish ? originalDish.isVeg : true;
+      let isVeg = originalDish ? originalDish.isVeg : true;
+      if (originalDish && originalDish.variants && item.variantName) {
+        const variantObj = originalDish.variants.find(v => v.name === item.variantName);
+        if (variantObj && typeof variantObj.isVeg === 'boolean') {
+          isVeg = variantObj.isVeg;
+        }
+      }
 
       return `
         <tr>

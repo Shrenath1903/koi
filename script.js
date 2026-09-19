@@ -171,7 +171,7 @@ const MENU_DATA = [
     isVeg: true,
     isSpicy: true,
     calories: 340,
-    image: './img/jhol_momo.jpg',
+    image: './img/jhol_momo.jpeg',
     description: 'Steamed momos served submerged in a bowl of aromatic, tangy, and nutty roasted sesame, soybean, and tomato soup broth (jhol achar).',
     tasteProfile: ['Tangy Sesame Broth', 'Spicy Timur Zing', 'Juicy Dumpling'],
     healthBenefits: ['Immunity Spices', 'Nutrient-Dense Broth'],
